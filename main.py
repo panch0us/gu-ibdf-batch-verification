@@ -8,7 +8,9 @@ def split_line(lico, line):
     if len(line.split()) == 2:
         lico += line.split()[1] + ';'
     if len(line.split()) == 3:
-        lico += line.split()[1] + line.split()[1] + ';'
+        lico += line.split()[1] + line.split()[2] + ';'
+    if len(line.split()) == 4:
+        lico += line.split()[1] + line.split()[2] + line.split()[3] + ';'
     return lico, line
 
 with open("provereno.txt", "w", encoding='windows-1251') as file_result:
