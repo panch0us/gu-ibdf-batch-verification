@@ -18,3 +18,8 @@
 ```
 иванов;иван;иванович;2222;;
 ```
+
+cборка:
+```
+pyinstaller main.py --name gibv_1.1 --version-file version --onefile -i ico.ico
+```
